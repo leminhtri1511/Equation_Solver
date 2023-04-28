@@ -5,7 +5,7 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 const colors = [
   Color.fromARGB(255, 238, 247, 249),
-  Color.fromARGB(255, 223, 228, 231),
+  Color.fromARGB(255, 187, 235, 235),
 ];
 
 class EquationFormalHolder extends StatelessWidget {
