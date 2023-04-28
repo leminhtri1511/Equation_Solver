@@ -59,9 +59,6 @@ class _EquationFormalState extends State<EquationFormal> {
       // mainAxisAlignment: MainAxisAlignment.start,
       children: [
         TextField(
-          onChanged: (value) {
-            print(value);
-          },
           controller: _aController,
           keyboardType: TextInputType.number,
           decoration: const InputDecoration(
