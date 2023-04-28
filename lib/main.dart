@@ -14,9 +14,7 @@ class EquationSolveApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const Scaffold(
-        body: EquationFormalHolder(),
-      ),
+      home: const EquationFormalHolder(),
     );
   }
 }
