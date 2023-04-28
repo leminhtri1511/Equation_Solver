@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'package:solve_equation/button.dart';
+
 // import 'package:solve_equation/equation_formal_holder.dart';
 
 class EquationFormal extends StatefulWidget {
@@ -23,8 +25,7 @@ class _EquationFormalState extends State<EquationFormal> {
 
     if (a == 0) {
       _result = 'Giá trị A phải khác 0!!!';
-    }
-    else {
+    } else {
       double delta = b * b - 4 * a * c;
       double x1, x2;
 
@@ -40,7 +41,6 @@ class _EquationFormalState extends State<EquationFormal> {
       } else {
         _result = 'Delta = $delta < 0 \n\nPhương trình vô nghiệm!';
       }
-      
     }
     setState(() {});
   }
@@ -59,6 +59,9 @@ class _EquationFormalState extends State<EquationFormal> {
       // mainAxisAlignment: MainAxisAlignment.start,
       children: [
         TextField(
+          onChanged: (value) {
+            print(value);
+          },
           controller: _aController,
           keyboardType: TextInputType.number,
           decoration: const InputDecoration(
@@ -95,13 +98,17 @@ class _EquationFormalState extends State<EquationFormal> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            ElevatedButton(
-              onPressed: _solveQuadraticEquation,
-              child: const Text('Solve the equation'),
+            Button(
+              content: 'Solve the equation',
+              onTap: () {
+                _solveQuadraticEquation();
+              },
             ),
-            ElevatedButton(
-              onPressed: _clearResult,
-              child: const Text('Clear result'),
+            Button(
+              content: 'Clear result',
+              onTap: () {
+                _clearResult();
+              },
             ),
           ],
         ),
