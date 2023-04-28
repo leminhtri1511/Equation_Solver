@@ -64,7 +64,6 @@ class _EquationFormalState extends State<EquationFormal> {
           decoration: const InputDecoration(
             labelText: 'Enter A',
             labelStyle: TextStyle(
-              // color: Color.fromARGB(255, 200, 100, 50),
               fontSize: 13,
               fontWeight: FontWeight.w600,
             ),
@@ -76,7 +75,6 @@ class _EquationFormalState extends State<EquationFormal> {
           decoration: const InputDecoration(
             labelText: 'Enter B',
             labelStyle: TextStyle(
-              // color: Color.fromARGB(255, 200, 100, 50),
               fontSize: 13,
               fontWeight: FontWeight.w600,
             ),
@@ -88,7 +86,6 @@ class _EquationFormalState extends State<EquationFormal> {
           decoration: const InputDecoration(
             labelText: 'Enter C',
             labelStyle: TextStyle(
-              // color: Color.fromARGB(255, 200, 100, 50),
               fontSize: 13,
               fontWeight: FontWeight.w600,
             ),
